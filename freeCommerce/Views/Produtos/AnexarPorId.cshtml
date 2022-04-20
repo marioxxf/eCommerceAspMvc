@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Anexar";
+    List<Business.Item> ultimoId = ViewBag.UltimoIdRegistrado;
+    Layout = "~/Views/Shared/_LayoutAnexo.cshtml";
+}
+<h2>Adicione a imagem do produto</h2>
+@using (Html.BeginForm("Anexar", "Produtos", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        @Html.TextBox("file", "", new { type = "file" }) <br />
+        <input type="submit" value="Upload" />
+        @ViewBag.Message
+    </div>
+}

@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "Produtos";
+    List<Business.Item> produtos = ViewBag.Produtos;
+    List<Business.Item> qtdTotal = ViewBag.QtdTotalEmEstoque;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<style>
+    #thegrid {
+        width: 100%
+    }
+
+        #thegrid div {
+            width: 24%;
+            display: inline-block;
+        }
+
+    #linkDetalhe {
+        color: #9d9d9d;
+        text-decoration: underline;
+    }
+</style>
+
+@if (TempData["sucesso"] != null)
+{
+    <br /><div id="divTemporaria" name="divTemporaria" class="alert alert-success">@TempData["sucesso"]</div>
+}
+
+@if (TempData["erro"] != null)
+{
+    <div id="divTemporariaDois" name="divTemporariaDois" class="alert alert-danger">@TempData["erro"]</div>
+}
+
+<div class="jumbotron">
+    <div>
+        <a href="/produtos/cadastro" class="btn btn-default">Cadastrar novo produto</a><br /><br />
+    </div>
+
+    <div class="pull-right">
+        Quantidade de produtos em estoque:
+        @foreach (var q in qtdTotal)
+        {
+            @q.qtdEstoque
+        }
+    </div>
+
+    <h2>Produtos</h2>
+    <div id="thegrid">
+        @foreach (var p in produtos)
+        {
+            string exibicaoDaImagem = "<a target='" + "_blank' href='../UploadedFiles/" + p.imgFile + "'><img src='" + "../UploadedFiles/" + p.imgFile + "' width=" + 150.ToString() + "px" + " height=" + 150.ToString() + "px" + "></img></a>";
+            exibicaoDaImagem = exibicaoDaImagem.Replace("\\", "/");
+
+            <div>
+                <b style="font-size: 20px;"><a id="linkDetalhe" href="produtos/detalhes/@p.id" target="_blank">@p.nome</a></b><br />
+                Valor: R$@p.precoVenda<br />
+                Categoria: @p.categoria<br />
+                @Html.Raw(exibicaoDaImagem)<br /><br /><br /><hr />
+            </div>
+        }
+    </div>
+
+</div>
+
+<script>
+    // Escondendo a div divTemporaria
+    $().ready(function () {
+        setTimeout(function () {
+            $('#divTemporaria').hide();
+        }, 6000);
+    });
+</script>

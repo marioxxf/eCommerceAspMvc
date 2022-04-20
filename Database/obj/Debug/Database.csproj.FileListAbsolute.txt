@@ -1,0 +1,12 @@
+C:\Users\mario\source\repos\freeCommerce\Database\bin\Debug\Database.dll
+C:\Users\mario\source\repos\freeCommerce\Database\bin\Debug\Database.pdb
+C:\Users\mario\source\repos\freeCommerce\Database\obj\Debug\Database.csproj.AssemblyReference.cache
+C:\Users\mario\source\repos\freeCommerce\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
+C:\Users\mario\source\repos\freeCommerce\Database\obj\Debug\Database.dll
+C:\Users\mario\source\repos\freeCommerce\Database\obj\Debug\Database.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Database\bin\Debug\Database.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Database\bin\Debug\Database.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Database\obj\Debug\Database.csproj.AssemblyReference.cache
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Database\obj\Debug\Database.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Database\obj\Debug\Database.pdb

@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Detalhes do Produto";
+    Business.Item produto = ViewBag.Produto;
+}
+
+<style>
+    #imgProduto {
+        display: flex;
+        justify-content: left;
+    }
+
+    #infoProduto {
+        justify-content: right;
+    }
+</style>
+
+@{
+    string imagemDoProduto = "/../UploadedFiles/" + produto.imgFile;
+}
+
+<h1>@produto.nome (@produto.categoria)</h1>
+<hr />
+
+<div style="display: flex; justify-content: space-around">
+    <div><br /><a target="_blank" href="@imagemDoProduto"><img src="@imagemDoProduto" width="800px" height="600px" /></a></div>
+    <div style="font-size: 14px">
+        <b>Preço de custo:</b> R$@produto.precoCusto<br />
+        <b>Preço de venda:</b> R$@produto.precoVenda<br />
+        <b>Categoria do produto:</b> @produto.categoria<br />
+        <b>Quantidade em estoque:</b> @produto.qtdEstoque
+    </div>
+</div>
+
+<!---
+<div id="infoProduto">
+    Teste
+</div>
+<div id="imgProduto">
+    <br /><a target="_blank" href="@imagemDoProduto"><img src="@imagemDoProduto" width="200px" height="200px" /></a>
+</div>-->
