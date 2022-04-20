@@ -9,4 +9,4 @@
 ![alt tag](https://i.imgur.com/PDfCURV.png)
 ![alt tag](https://i.imgur.com/5yOP0kG.png)
 ![alt tag](https://i.imgur.com/QjoCWMm.png)
-![alt tag](https://i.imgur.com/Gd8IkCX.png)
+![alt tag](https://i.imgur.com/WOMdcVH.png)
