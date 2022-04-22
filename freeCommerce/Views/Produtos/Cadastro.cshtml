@@ -12,6 +12,15 @@
     <h2>Cadastro de novos produtos</h2>
     <form action="/produtos/criar" method="post">
         <div>
+            @{
+                if (ultimoId.Count == 0)
+                {
+                    admCampo = "disabled";
+                    <div>
+                        <a href="/produtos/1/anexar" target="_blank" class="btn btn-default" data-toggle="modal" data-target="#modalExemplo">Anexar imagem do produto</a><br /><br />
+                    </div>
+                }
+            }
             @foreach (var id in ultimoId)
             {
                 int novoId = id.id + 1;
