@@ -4,11 +4,15 @@
     int iterador = 0;
 }
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+
 <style>
     #imgProduto {
         display: flex;
         justify-content: left;
     }
+
 
     #infoProduto {
         justify-content: right;
@@ -23,22 +27,37 @@
 <hr />
 
 <div style="display: flex; justify-content: space-around">
-    <div><br /><a target="_blank" href="@imagemDoProduto"><img src="@imagemDoProduto" width="100%" height="600px" /></a></div>
-    <div style="font-size: 14px; margin-left: 50px;">
+    <div><br /><img id="imagemDoProduto" data-zoom-image="@imagemDoProduto" src="@imagemDoProduto" width="75%" height="75%" /></div>
 
-        @{
+    <!---<div style="font-size: 14px; margin-left: 5px;">
+        <@@{
             string valorCusto = produto.precoCusto.ToString();
             valorCusto = valorCusto.Replace(",", ".");
 
             string valorVenda = produto.precoVenda.ToString();
             valorVenda = valorVenda.Replace(",", ".");
-        }
+        }>
 
-        <b>Preço de custo:</b> <div id="precoCusto" name="precoCusto">@valorCusto</div><br /><br />
-        <b>Preço de venda:</b> <div id="precoVenda" name="precoVenda">@valorVenda</div><br /><br />
-        <b>Categoria do produto:</b> @produto.categoria<br /><br />
-        <b>Quantidade em estoque:</b> @produto.qtdEstoque
-    </div>
+        <b>Preço de custo:</b> <div id="precoCusto" name="precoCusto"><@@valorCusto</div><br /><br />
+        <b>Preço de venda:</b> <div id="precoVenda" name="precoVenda"><@@valorVenda</div><br /><br />
+        <b>Categoria do produto:</b> <@@produto.categoria<br /><br />
+        <b>Quantidade em estoque:</b> <@@produto.qtdEstoque
+    </div>-->
+</div>
+
+<div style="display: flex; justify-content: space-evenly">
+    @{
+        string valorCusto = produto.precoCusto.ToString();
+        valorCusto = valorCusto.Replace(",", ".");
+
+        string valorVenda = produto.precoVenda.ToString();
+        valorVenda = valorVenda.Replace(",", ".");
+    }
+
+    <b>Preço de custo:</b> <div id="precoCusto" name="precoCusto">@valorCusto</div> |
+    <b>Preço de venda:</b> <div id="precoVenda" name="precoVenda">@valorVenda</div> |
+    <b>Categoria do produto:</b> <div>@produto.categoria</div> |
+    <b>Quantidade em estoque:</b> @produto.qtdEstoque
 </div>
 
 <!---
@@ -57,4 +76,8 @@
     const valorVenda = document.getElementById('precoVenda').textContent;
     const valorVendaFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valorVenda)
     document.getElementById('precoVenda').textContent = valorVendaFormatado;
+</script>
+
+<script>
+    $("#imagemDoProduto").ezPlus();
 </script>
