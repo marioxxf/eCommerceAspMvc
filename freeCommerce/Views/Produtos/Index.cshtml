@@ -3,18 +3,22 @@
     List<Business.Item> produtos = ViewBag.Produtos;
     List<Business.Item> qtdTotal = ViewBag.QtdTotalEmEstoque;
     Layout = "~/Views/Shared/_Layout.cshtml";
+    int iterador = 0;
 }
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <style>
     #thegrid {
-        width: 100%
+        width: 100%;
+        ;
     }
 
         #thegrid div {
             width: 24%;
-            display: inline-block;
+            display: inline-table;
         }
 
     #linkDetalhe {
@@ -50,16 +54,27 @@
     <div id="thegrid">
         @foreach (var p in produtos)
         {
-            string exibicaoDaImagem = "<a target='" + "_blank' href='../UploadedFiles/" + p.imgFile + "'><img src='" + "../UploadedFiles/" + p.imgFile + "' width=" + 150.ToString() + "px" + " height=" + 150.ToString() + "px" + "></img></a>";
+            /*string exibicaoDaImagem = "<a target='" + "_blank' href='../UploadedFiles/" + p.imgFile + "'><img src='" + "../UploadedFiles/" + p.imgFile + "' width=" + 75.ToString() + "px" + " height=" + 150.ToString() + "px" + "></img></a>";*/
+            string exibicaoDaImagem = "<a target='" + "_blank' href='../UploadedFiles/" + p.imgFile + "'><img src='" + "../UploadedFiles/" + p.imgFile + "' width='100%'></img></a>";
             exibicaoDaImagem = exibicaoDaImagem.Replace("\\", "/");
 
             <div>
                 <b style="font-size: 20px;"><a id="linkDetalhe" href="produtos/detalhes/@p.id" target="_blank">@p.nome</a></b><br />
-                Valor: R$@p.precoVenda<br />
+                @{
+                    string valorVenda = p.precoVenda.ToString();
+                    valorVenda = valorVenda.Replace(",", ".");
+                }
+
+                
+
+                Valor: <div id="testeMario/@iterador" value="Mario Junior" name="testeMario/@iterador">@valorVenda</div><br />
+
+                
                 Categoria: @p.categoria<br />
                 @Html.Raw(exibicaoDaImagem)<br /><br /><br /><hr />
             </div>
-        }
+            iterador = iterador+1;
+         }
     </div>
 
 </div>
@@ -71,4 +86,11 @@
             $('#divTemporaria').hide();
         }, 6000);
     });
+
+    var iterador = @iterador;
+    for (let i = 0; i < iterador; i++) {
+        const valor = document.getElementById('testeMario/' + i).textContent;
+        const valorFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valor)
+        document.getElementById('testeMario/' + i).textContent = valorFormatado;
+    }
 </script>

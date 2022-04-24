@@ -1,6 +1,7 @@
 ﻿@{
     ViewBag.Title = "Detalhes do Produto";
     Business.Item produto = ViewBag.Produto;
+    int iterador = 0;
 }
 
 <style>
@@ -22,11 +23,20 @@
 <hr />
 
 <div style="display: flex; justify-content: space-around">
-    <div><br /><a target="_blank" href="@imagemDoProduto"><img src="@imagemDoProduto" width="800px" height="600px" /></a></div>
-    <div style="font-size: 14px">
-        <b>Preço de custo:</b> R$@produto.precoCusto<br />
-        <b>Preço de venda:</b> R$@produto.precoVenda<br />
-        <b>Categoria do produto:</b> @produto.categoria<br />
+    <div><br /><a target="_blank" href="@imagemDoProduto"><img src="@imagemDoProduto" width="100%" height="600px" /></a></div>
+    <div style="font-size: 14px; margin-left: 50px;">
+
+        @{
+            string valorCusto = produto.precoCusto.ToString();
+            valorCusto = valorCusto.Replace(",", ".");
+
+            string valorVenda = produto.precoVenda.ToString();
+            valorVenda = valorVenda.Replace(",", ".");
+        }
+
+        <b>Preço de custo:</b> <div id="precoCusto" name="precoCusto">@valorCusto</div><br /><br />
+        <b>Preço de venda:</b> <div id="precoVenda" name="precoVenda">@valorVenda</div><br /><br />
+        <b>Categoria do produto:</b> @produto.categoria<br /><br />
         <b>Quantidade em estoque:</b> @produto.qtdEstoque
     </div>
 </div>
@@ -38,3 +48,13 @@
 <div id="imgProduto">
     <br /><a target="_blank" href="@imagemDoProduto"><img src="@imagemDoProduto" width="200px" height="200px" /></a>
 </div>-->
+
+<script>
+    const valor = document.getElementById('precoCusto').textContent;
+    const valorFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valor)
+    document.getElementById('precoCusto').textContent = valorFormatado;
+
+    const valorVenda = document.getElementById('precoVenda').textContent;
+    const valorVendaFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valorVenda)
+    document.getElementById('precoVenda').textContent = valorVendaFormatado;
+</script>
