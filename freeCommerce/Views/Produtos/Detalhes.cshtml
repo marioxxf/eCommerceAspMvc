@@ -45,26 +45,11 @@
 <hr />
 
 <label style="color:gray;">Passe o mouse sobre a imagem para uma maior análise ou clique nela</label>
-<div style="display: flex; justify-content: space-around">
-    <div><br /><a target="_blank" href="@imagemDoProduto"><img id="imagemDoProduto" data-zoom-image="@imagemDoProduto" src="@imagemDoProduto" width="75%" height="75%" /></a></div>
-
-    <!---<div style="font-size: 14px; margin-left: 5px;">
-        <@@{
-            string valorCusto = produto.precoCusto.ToString();
-            valorCusto = valorCusto.Replace(",", ".");
-
-            string valorVenda = produto.precoVenda.ToString();
-            valorVenda = valorVenda.Replace(",", ".");
-        }>
-
-        <b>Preço de custo:</b> <div id="precoCusto" name="precoCusto"><@@valorCusto</div><br /><br />
-        <b>Preço de venda:</b> <div id="precoVenda" name="precoVenda"><@@valorVenda</div><br /><br />
-        <b>Categoria do produto:</b> <@@produto.categoria<br /><br />
-        <b>Quantidade em estoque:</b> <@@produto.qtdEstoque
-    </div>-->
+<div style="display: block;">
+    <div><br /><a target="_blank" href="@imagemDoProduto"><img id="imagemDoProduto" data-zoom-image="@imagemDoProduto" src="@imagemDoProduto" width="50%" height="50%" /></a></div><br />
 </div>
 
-<div style="display: flex; justify-content: space-evenly">
+<div style="display: flex; justify-content: space-evenly;">
     @{
         string valorCusto = produto.precoCusto.ToString();
         valorCusto = valorCusto.Replace(",", ".");

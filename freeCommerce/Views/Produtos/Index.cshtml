@@ -13,7 +13,7 @@
     }
 
         #thegrid div {
-            width: 24%;
+            width: 33%;
             display: inline-table;
         }
 
@@ -35,8 +35,10 @@
 
 <div class="jumbotron">
     <div>
-        <a href="/produtos/cadastro" class="btn btn-secondary pull-right" style="background: white; color: black; border: white;">Cadastrar novo produto</a><br /><br />
+        <a href="/produtos/cadastro" class="btn btn-secondary pull-right" style="background: white; color: #A54ED6; border: white; ">Cadastrar novo produto</a><br /><br />
     </div>
+
+    
 
     <div class="pull-right">
         Quantidade de produtos em estoque:
@@ -46,7 +48,7 @@
         }
     </div>
 
-    <h2>Produtos</h2>
+    <h2 style="color: white; ">Produtos</h2>
     <div id="thegrid">
         @foreach (var p in produtos)
         {
@@ -54,23 +56,48 @@
             string exibicaoDaImagem = "<a target='" + "_blank' href='../UploadedFiles/" + p.imgFile + "'><img src='" + "../UploadedFiles/" + p.imgFile + "' width='100%'></img></a>";
             exibicaoDaImagem = exibicaoDaImagem.Replace("\\", "/");
 
-            <div>
-                <b style="font-size: 20px;"><a id="linkDetalhe" href="produtos/detalhes/@p.id" target="_blank">@p.nome</a></b><br />
-                @{
-                    string valorVenda = p.precoVenda.ToString();
-                    valorVenda = valorVenda.Replace(",", ".");
-                }
+            string srcImagem = "../UploadedFiles/" + p.imgFile;
 
-                
+        <div>
+            @{
+                string valorVenda = p.precoVenda.ToString();
+                valorVenda = valorVenda.Replace(",", ".");
+            }
 
-                Valor: <div id="testeMario/@iterador" value="Mario Junior" name="testeMario/@iterador">@valorVenda</div><br />
 
-                
-                Categoria: @p.categoria<br />
-                @Html.Raw(exibicaoDaImagem)<br /><br /><br />
+
+            <div style="display: none;" id="testeMario/@iterador" value="Mario Junior" name="testeMario/@iterador">@valorVenda</div><br />
+
+
+
+            <div class="card" style="width: 25rem;">
+                <img src="@srcImagem" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">@p.nome</h6>
+                    <p class="card-text" id="divCard/@iterador" name="divCard/@iterador"></p>
+                    <a href="produtos/detalhes/@p.id" class="btn btn-primary stretched-link" style="background-color: #A54ED6; border: #A54ED6; ">Acessar produto</a>
+                </div>
             </div>
-            iterador = iterador+1;
-         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+            iterador = iterador + 1;
+        }
     </div>
 
 </div>
@@ -88,5 +115,6 @@
         const valor = document.getElementById('testeMario/' + i).textContent;
         const valorFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valor)
         document.getElementById('testeMario/' + i).textContent = valorFormatado;
+        document.getElementById('divCard/' + i).textContent = valorFormatado;
     }
 </script>
