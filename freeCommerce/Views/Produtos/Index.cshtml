@@ -112,8 +112,10 @@
 
     var iterador = @iterador;
     for (let i = 0; i < iterador; i++) {
-        const valor = document.getElementById('testeMario/' + i).textContent;
-        const valorFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valor)
+        let valor = document.getElementById('testeMario/' + i).textContent;
+        console.log(valor);
+        let valorFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valor)
+        console.log(valorFormatado);
         document.getElementById('testeMario/' + i).textContent = valorFormatado;
         document.getElementById('divCard/' + i).textContent = valorFormatado;
     }

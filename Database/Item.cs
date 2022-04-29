@@ -68,7 +68,7 @@ namespace Database
             }
         }
 
-        public void Salvar(int id, string descricao, decimal precoCusto, decimal precoVenda, int qtdEstoque, string categoria)
+        public void Salvar(int id, string descricao, double precoCusto, double precoVenda, int qtdEstoque, string categoria)
         {
 
             /*string a = precoCusto.ToString();

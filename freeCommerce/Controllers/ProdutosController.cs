@@ -30,9 +30,9 @@ namespace freeCommerce.Controllers
         {
             try
             {
-                decimal precoC = Convert.ToDecimal(Request["precoCusto"], new CultureInfo("en-US"));
-                decimal precoV = Convert.ToDecimal(Request["precoVenda"], new CultureInfo("en-US"));
-
+                double precoC = Convert.ToDouble(Request["precoCusto"]);
+                double precoV = Convert.ToDouble(Request["precoVenda"]);
+                
                 /*decimal precoC = decimal.Parse(Request["precoCusto"]);
                 decimal precoV = decimal.Parse(Request["precoVenda"]);*/
                 int qtdE = int.Parse(Request["qtdEstoque"]);

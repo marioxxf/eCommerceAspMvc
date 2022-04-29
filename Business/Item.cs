@@ -11,8 +11,8 @@ namespace Business
     {
         public int id { get; set; }
         public string nome { get; set; }
-        public decimal precoCusto { get; set; }
-        public decimal precoVenda { get; set; }
+        public double precoCusto { get; set; }
+        public double precoVenda { get; set; }
         public int qtdEstoque { get; set; }
         public string categoria { get; set; }
         public string imgPath { get; set; }
@@ -27,8 +27,8 @@ namespace Business
                 var item = new Item();
                 item.id = Convert.ToInt32(row["id"]);
                 item.nome = row["nome"].ToString();
-                item.precoCusto = Convert.ToDecimal(row["precoCusto"]);
-                item.precoVenda = Convert.ToDecimal(row["precoVenda"]);
+                item.precoCusto = Convert.ToDouble(row["precoCusto"]);
+                item.precoVenda = Convert.ToDouble(row["precoVenda"]);
                 item.qtdEstoque = Convert.ToInt32(row["qtdEstoque"]);
                 item.categoria = row["categoria"].ToString();
                 item.imgFile = row["imgFile"].ToString();
@@ -92,8 +92,8 @@ namespace Business
             {
                 produto.id = Convert.ToInt32(row["id"]);
                 produto.nome = row["nome"].ToString();
-                produto.precoCusto = Convert.ToDecimal(row["precoCusto"]);
-                produto.precoVenda = Convert.ToDecimal(row["precoVenda"]);
+                produto.precoCusto = Convert.ToDouble(row["precoCusto"]);
+                produto.precoVenda = Convert.ToDouble(row["precoVenda"]);
                 produto.qtdEstoque = Convert.ToInt32(row["qtdEstoque"]);
                 produto.categoria = row["categoria"].ToString();
                 produto.imgFile = row["imgFile"].ToString();
