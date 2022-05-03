@@ -5,11 +5,53 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Globalization;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Database
 {
+    public class Hash
+    {
+        private HashAlgorithm _algoritmo;
+
+        public Hash(HashAlgorithm algoritmo)
+        {
+            _algoritmo = algoritmo;
+        }
+
+        public string CriptografarSenha(string senha)
+        {
+            var encodedValue = Encoding.UTF8.GetBytes(senha);
+            var encryptedPassword = _algoritmo.ComputeHash(encodedValue);
+
+            var sb = new StringBuilder();
+            foreach (var caracter in encryptedPassword)
+            {
+                sb.Append(caracter.ToString("X2"));
+            }
+
+            return sb.ToString();
+        }
+
+        public bool VerificarSenha(string senhaDigitada, string senhaCadastrada)
+        {
+            if (string.IsNullOrEmpty(senhaCadastrada))
+                throw new NullReferenceException("Cadastre uma senha.");
+
+            var encryptedPassword = _algoritmo.ComputeHash(Encoding.UTF8.GetBytes(senhaDigitada));
+
+            var sb = new StringBuilder();
+            foreach (var caractere in encryptedPassword)
+            {
+                sb.Append(caractere.ToString("X2"));
+            }
+
+            return sb.ToString() == senhaCadastrada;
+        }
+    }
+
     public class Conta
     {
         private string sqlConn()
@@ -17,34 +59,66 @@ namespace Database
             return ConfigurationManager.AppSettings["sqlConn"];
         }
 
-        public void Salvar(string usuario, string email, string senha)
+        public void Salvar(string usuario, string email, string senha, string idSessao)
         {
+            var hash = new Hash(SHA512.Create());
             using (SqlConnection connection = new SqlConnection(sqlConn()))
             {
                 string queryString = "update usuarios set statusLogin = 0;" +
-                    "insert into usuarios values('" + usuario + "', '" + senha + "', 1, 1, 1, '" + email + "')";
+                    "insert into usuarios (usuario, senha, statusLogin, idSessao, statusConta, nivelAcesso, email) values('" + usuario + "', '" + hash.CriptografarSenha(senha) + "', 1, '" + idSessao + "', 1, 1, '" + email + "')";
                 SqlCommand command = new SqlCommand(queryString, connection);
                 command.Connection.Open();
                 command.ExecuteNonQuery();
             }
         }
 
-        public void Desconecta()
+        public void Logar(string usuario, string senha, string idSessao)
+        {
+            var hash = new Hash(SHA512.Create());
+            string hashTxtSenha = null;
+            hashTxtSenha = hash.CriptografarSenha(senha);
+
+            using (SqlConnection connection = new SqlConnection(sqlConn()))
+            {
+                string queryString = "select * from usuarios where usuario = '" + usuario + "' and senha = '" + hashTxtSenha + "'";
+                Console.WriteLine(queryString);
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Connection.Open();
+
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = command;
+
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+
+                if (table == null)
+                {
+                }
+                else
+                {
+                    string queryStringDois = "update usuarios set statusLogin = 1, idSessao = '" + idSessao + "' where usuario = '" + usuario + "' and senha = '" + hashTxtSenha + "'";
+                    SqlCommand commandDois = new SqlCommand(queryStringDois, connection);
+                    commandDois.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void Desconecta(string idSessao)
         {
             using (SqlConnection connection = new SqlConnection(sqlConn()))
             {
-                string queryString = "update usuarios set statusLogin = 0";
+                string queryString = "update usuarios set idSessao = '', statusLogin = 0 where statusLogin = 1 and idSessao = '" + idSessao + "'";
                 SqlCommand command = new SqlCommand(queryString, connection);
                 command.Connection.Open();
                 command.ExecuteNonQuery();
             }
         }
 
-        public DataTable BuscaPorContaLogada()
+        public DataTable BuscaPorContaLogada(string idSessao)
         {
             using (SqlConnection connection = new SqlConnection(sqlConn()))
             {
-                string queryString = "select * from usuarios where statusLogin = 1";
+                string queryString = "select * from usuarios where statusLogin = 1 and idSessao = '" + idSessao + "'";
                 SqlCommand command = new SqlCommand(queryString, connection);
                 command.Connection.Open();
 

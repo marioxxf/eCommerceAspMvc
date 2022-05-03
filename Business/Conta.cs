@@ -16,22 +16,28 @@ namespace Business
         public int statusLogin { get; set; }
         public int statusConta { get; set; }
         public int nivelAcesso { get; set; }
+        public string idSessao { get; set; }
 
         public void Save()
         {
-            new Database.Conta().Salvar(this.usuario, this.email, this.senha);
+            new Database.Conta().Salvar(this.usuario, this.email, this.senha, this.idSessao);
         }
 
-        public void Desconecta()
+        public void Login()
         {
-            new Database.Conta().Desconecta();
+            new Database.Conta().Logar(this.usuario, this.senha, this.idSessao);
         }
 
-        public static object BuscaPorStatusLogin()
+        public void Desconecta(string idSessao)
+        {
+            new Database.Conta().Desconecta(idSessao);
+        }
+
+        public static object BuscaPorStatusLogin(string idSessao)
         {
             var conta = new Conta();
             var contaDb = new Database.Conta();
-            foreach (DataRow row in contaDb.BuscaPorContaLogada().Rows)
+            foreach (DataRow row in contaDb.BuscaPorContaLogada(idSessao).Rows)
             {
                 conta.id = Convert.ToInt32(row["id"]);
                 conta.usuario = row["usuario"].ToString();
@@ -41,5 +47,7 @@ namespace Business
             }
             return conta;
         }
+
+
     }
 }

@@ -1,12 +1,13 @@
-﻿@{ 
+﻿@{
     string usuarioLogado = "";
-    if(Html.Action("SiteName", "Autenticacao") == null)
+    string idDaSessao = Session.SessionID;
+    if (Html.Action("UsuarioLogado", "Autenticacao") == null)
     {
         usuarioLogado = "";
     }
     else
     {
-        usuarioLogado = Html.Action("SiteName", "Autenticacao").ToString();
+        usuarioLogado = Html.Action("UsuarioLogado", "Autenticacao").ToString();
     }
 }
 
@@ -124,7 +125,7 @@
                             {
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/autenticacao/minhaconta">Minha conta</a>
-                                    <a class="dropdown-item" onclick="testeDesconecta()" href="/">Desconectar</a>
+                                    <a class="dropdown-item" onclick="desconectaUsuario()" href="/">Desconectar</a>
                                 </div>
                             }
                         }
@@ -166,7 +167,7 @@
         // document ready
     });
 
-    function testeDesconecta() {
+    function desconectaUsuario() {
         $.ajax({
                 type: "POST",
                 url: '@Url.Action("Desconecta", "Autenticacao")',
@@ -176,7 +177,7 @@
                     console.log("Desconectado!")
                 },
                 error: function () {
-                    alert("Error while inserting data");
+                    console.log("Sistema tentou localizar uma View para o ActionResult Desconecta, mas ele não existe. Usuário desconectado da mesma forma!")
                 }
             });
     }

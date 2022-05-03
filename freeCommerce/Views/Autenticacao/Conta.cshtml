@@ -2,6 +2,19 @@
     ViewBag.Title = "Autenticacao";
     Layout = "~/Views/Shared/_Layout.cshtml";
     Business.Conta conta = ViewBag.Conta;
+
+    string nivelAcesso = "";
+
+    if(conta.nivelAcesso == 1)
+    {
+        nivelAcesso = "Usuário comum";
+    }
+    else if(conta.nivelAcesso == 2)
+    {
+        nivelAcesso = "Administrador";
+    }
 }
 
-@conta.usuario
+<label>Nome de usuário: &nbsp;</label>@conta.usuario<br />
+<label>E-mail cadastrado: &nbsp;</label>@conta.email<br />
+<label>Nível de acesso: &nbsp;</label>@nivelAcesso<br />

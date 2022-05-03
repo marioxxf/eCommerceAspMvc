@@ -37,6 +37,7 @@ namespace freeCommerce.Controllers
                 conta.usuario = Request["usuario"];
                 conta.email = Request["email"];
                 conta.senha = Request["senha"];
+                conta.idSessao = Request["idSessao"];
                 conta.Save();
                 Response.Redirect("/autenticacao/minhaconta");
                 TempData["contaCriada"] = "Conta criada com sucesso!";
@@ -46,17 +47,37 @@ namespace freeCommerce.Controllers
                 TempData["contaNaoCriada"] = "A conta não pode ser criada (" + erro.Message + ")!";
             }
         }
+
+        [HttpPost]
+        [ValidateInput(false)]
+        public void Logar()
+        {
+            try
+            {
+                var conta = new Conta();
+                conta.usuario = Request["usuario"];
+                conta.senha = Request["senha"];
+                conta.idSessao = Request["idSessao"];
+                conta.Login();
+                Response.Redirect("/autenticacao/minhaconta");
+                TempData["contaLogada"] = "Conta logada com sucesso!";
+            }
+            catch (Exception erro)
+            {
+                TempData["contaNaoCriada"] = "A conta não pode ser logada (" + erro.Message + ")!";
+            }
+        }
         public ActionResult Conta()
         {
-            var conta = Business.Conta.BuscaPorStatusLogin();
+            var conta = Business.Conta.BuscaPorStatusLogin(Session.SessionID);
             ViewBag.Conta = conta;
             return View();
         }
 
         [ChildActionOnly]
-        public ActionResult SiteName()
+        public ActionResult UsuarioLogado()
         {
-            var conta = Business.Conta.BuscaPorStatusLogin();
+            var conta = Business.Conta.BuscaPorStatusLogin(Session.SessionID);
             Business.Conta contaLogada = (Conta)conta;
             string nomeUsuarioLogado = contaLogada.usuario;
             return new ContentResult { Content = nomeUsuarioLogado };
@@ -66,7 +87,7 @@ namespace freeCommerce.Controllers
         public ActionResult Desconecta()
         {
             var conta = new Conta();
-            conta.Desconecta();
+            conta.Desconecta(Session.SessionID);
             string message = "Sucesso!";
             return View();
         }
