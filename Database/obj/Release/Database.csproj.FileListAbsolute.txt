@@ -1,0 +1,12 @@
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Database\bin\Release\Database.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Database\bin\Release\Database.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Database\obj\Release\Database.csproj.AssemblyReference.cache
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Database\obj\Release\Database.csproj.CoreCompileInputs.cache
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Database\obj\Release\Database.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Database\obj\Release\Database.pdb
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Database\bin\Release\Database.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Database\bin\Release\Database.pdb
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Database\obj\Release\Database.csproj.AssemblyReference.cache
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Database\obj\Release\Database.csproj.CoreCompileInputs.cache
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Database\obj\Release\Database.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Database\obj\Release\Database.pdb

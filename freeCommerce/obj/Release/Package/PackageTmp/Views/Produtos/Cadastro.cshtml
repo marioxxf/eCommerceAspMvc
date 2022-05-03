@@ -1,0 +1,138 @@
+﻿@{
+    List<Business.Item> ultimoId = ViewBag.UltimoIdRegistrado;
+    string admCampo = "";
+    string admLabel = "";
+    List<Business.Item> lista;
+}
+
+<!-- JQuery Mask's Imports -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"
+        integrity="sha256-yE5LLp5HSQ/z+hJeCqkz9hdjNkk1jaiGG0tDCraumnA="
+        crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous">
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous">
+</script>
+
+<div class="jumbotron">
+    <div>
+        <a href="/produtos" class="btn btn-secondary pull-right" style="background: white; color: black; border: white;">Visualizar produtos cadastrados</a><br /><br />
+    </div>
+    <h2 style="color: white;">Cadastro de novos produtos</h2>
+    <form action="/produtos/criar" method="post">
+        <div>
+            @{
+                if (ultimoId.Count == 0)
+                {
+                    admCampo = "disabled";
+                    <div>
+                        <a href="/produtos/1/anexar" target="_blank" class="btn btn-primary" style="background: white; color: black; border: white;" data-toggle="modal" data-target="#modalExemplo">Anexar imagem do produto</a><br /><br />
+                    </div>
+                }
+            }
+            @foreach (var id in ultimoId)
+            {
+                int novoId = id.id + 1;
+                <div>
+                    <a href="/produtos/@novoId/anexar" target="_blank" class="btn btn-primary" style="background: white; color: black; border: white;" data-toggle="modal" data-target="#modalExemplo">Anexar imagem do produto</a><br /><br />
+                </div>
+
+
+                if (id.nome.ToString().Length > 0)
+                {
+                    admCampo = "disabled";
+                    admLabel = "";
+                }
+                else
+                {
+                    admCampo = "";
+                    admLabel = "hidden";
+                }
+
+                <label @admLabel style="margin-bottom: 20px; color:gray;">Anexe uma imagem para continuar com o cadastro do produto</label>
+            }
+        </div>
+
+        <div class="form-group">
+            <label for="nome">Descrição do produto: </label>
+            <input type="text" class="form-control" @admCampo name="descricao" id="descricao">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Preço de custo:</label>
+            <input type="text" class="form-control" @admCampo name="precoCusto" id="precoCusto">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Preço de venda:</label>
+            <input type="text" class="form-control" @admCampo name="precoVenda" id="precoVenda">
+        </div>
+
+        <div class="form-group">
+            <label for="pwd">Quantidade em estoque:</label>
+            <input type="text" class="form-control" @admCampo name="qtdEstoque" id="qtdEstoque">
+        </div>
+
+        <div class="form-group">
+            <label for="pwd">Categoria:</label>
+            <input type="text" class="form-control" @admCampo name="categoria" id="categoria">
+        </div>
+
+        <input type="button" value="Cadastrar" class="btn btn-secondary" style="background: white; color: black; border: white;" @admCampo onclick="validaFormulario();">
+        <button style="display:none;" id="botaoCadastro" name="botaoCadastro" type="submit" class="btn btn-default" @admCampo>Cadastrar</button>
+        <input type="button" value="Teste" id="btnTeste" name="btnTeste" onclick="testeMario();" />
+    </form>
+</div>
+
+<!-- Modal -->
+<div class="modal" tabindex="-1" id="modalExemplo">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function validaFormulario() {
+        var descricao = document.getElementById('descricao').value;
+        var precoCusto = document.getElementById('precoCusto').value;
+        var precoVenda = document.getElementById('precoVenda').value;
+        var qtdEstoque = document.getElementById('qtdEstoque').value;
+        var categoria = document.getElementById('categoria').value;
+
+        if (descricao == "" || precoCusto == "" || precoVenda == "" || qtdEstoque == "" || categoria == "") {
+            alert("Preencha todos os campos!");
+        }
+        else {
+            document.getElementById('botaoCadastro').click();
+        }
+    }
+</script>
+
+<script>
+    $('input[name="precoVenda"]').mask('#.##0,00', { reverse: true });
+    $('input[name="precoCusto"]').mask('#.##0,00', { reverse: true});
+</script>
+
+<script>
+    function testeMario() {
+        let valor = $("#precoVenda").unmask(mask);
+        console.log(valor);
+    }
+</script>

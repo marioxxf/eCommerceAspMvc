@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AutenticacaoController.cs" />
     <Compile Include="Controllers\ProdutosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -173,6 +174,11 @@
     <Content Include="Views\Produtos\AnexarPorId.cshtml" />
     <Content Include="Views\Shared\_LayoutAnexo.cshtml" />
     <Content Include="Views\Produtos\Detalhes.cshtml" />
+    <Content Include="Views\Autenticacao\Index.cshtml" />
+    <Content Include="Views\Autenticacao\Login.cshtml" />
+    <Content Include="Views\Autenticacao\Cadastro.cshtml" />
+    <Content Include="Views\Autenticacao\Conta.cshtml" />
+    <Content Include="Views\Autenticacao\Desconecta.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "Detalhes do Produto";
+    Business.Item produto = ViewBag.Produto;
+    int iterador = 0;
+    string disponibilidade = "";
+    string imgDisponibilidade = "";
+    string destaqueVermelho = "";
+}
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+
+<style>
+    #imgProduto {
+        display: flex;
+        justify-content: left;
+    }
+
+
+    #infoProduto {
+        justify-content: right;
+    }
+</style>
+
+@{
+    string imagemDoProduto = "/../UploadedFiles/" + produto.imgFile;
+
+    if(produto.qtdEstoque > 0)
+    {
+        disponibilidade = "Disponível";
+        imgDisponibilidade = "/../UploadedFiles/src/disponivel.png";
+    }
+    else
+    {
+        disponibilidade = "Indisponível";
+        imgDisponibilidade = "/../UploadedFiles/src/indisponivel.png";
+        destaqueVermelho = "color: red;";
+    }
+}
+
+<div style="display: flex; justify-content:  initial">
+    <h1>@produto.nome&nbsp;</h1>
+    <h3>(@disponibilidade <img src="@imgDisponibilidade" width="6%" />)</h3>
+</div>
+<hr />
+
+<label style="color:gray;">Passe o mouse sobre a imagem para uma maior análise ou clique nela</label>
+<div style="display: block;">
+    <div><br /><a target="_blank" href="@imagemDoProduto"><img id="imagemDoProduto" data-zoom-image="@imagemDoProduto" src="@imagemDoProduto" width="50%" height="50%" /></a></div><br />
+</div>
+
+<div style="display: flex; justify-content: space-evenly;">
+    @{
+        string valorCusto = produto.precoCusto.ToString();
+        valorCusto = valorCusto.Replace(",", ".");
+
+        string valorVenda = produto.precoVenda.ToString();
+        valorVenda = valorVenda.Replace(",", ".");
+    }
+
+    <b>Preço de custo:</b> <div style="font-size: 13px;" id="precoCusto" name="precoCusto">@valorCusto</div> |
+    <b>Preço de venda:</b> <div style="font-size: 13px;" id="precoVenda" name="precoVenda">@valorVenda</div> |
+    <b>Categoria do produto:</b> <div style="font-size: 13px;">@produto.categoria</div> |
+    <b>Quantidade em estoque:</b> <div style="font-size: 13px; @destaqueVermelho">@produto.qtdEstoque</div>
+</div>
+
+<!---
+<div id="infoProduto">
+    Teste
+</div>
+<div id="imgProduto">
+    <br /><a target="_blank" href="@imagemDoProduto"><img src="@imagemDoProduto" width="200px" height="200px" /></a>
+</div>-->
+
+<script>
+    const valor = document.getElementById('precoCusto').textContent;
+    const valorFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valor)
+    document.getElementById('precoCusto').textContent = valorFormatado;
+
+    const valorVenda = document.getElementById('precoVenda').textContent;
+    const valorVendaFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valorVenda)
+    document.getElementById('precoVenda').textContent = valorVendaFormatado;
+</script>
+
+<script>
+    $("#imagemDoProduto").ezPlus();
+</script>

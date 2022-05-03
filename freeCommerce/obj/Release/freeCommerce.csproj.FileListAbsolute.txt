@@ -1,0 +1,270 @@
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\freeCommerce.dll.config
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\freeCommerce.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\freeCommerce.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\csc.exe
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\csc.exe.config
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\csc.rsp
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\csi.exe
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\csi.exe.config
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\csi.rsp
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.AppContext.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Console.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.IO.Compression.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Net.Http.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Net.Sockets.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.ValueTuple.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Xml.XPath.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\vbc.exe
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\vbc.exe.config
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\vbc.rsp
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\VBCSCompiler.exe
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\Antlr3.Runtime.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\Business.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\Newtonsoft.Json.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.Helpers.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.Mvc.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.Optimization.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.Razor.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.WebPages.Deployment.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.WebPages.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.WebPages.Razor.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\WebGrease.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\Database.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\Business.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.Helpers.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.Mvc.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.Optimization.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.Razor.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.WebPages.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.WebPages.Deployment.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\System.Web.WebPages.Razor.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\Newtonsoft.Json.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\Antlr3.Runtime.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\Database.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\obj\Release\freeCommerce.csproj.AssemblyReference.cache
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\obj\Release\freeCommerce.csproj.CoreCompileInputs.cache
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\obj\Release\freeCommerce.csproj.CopyComplete
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\obj\Release\freeCommerce.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\freeCommerce\obj\Release\freeCommerce.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\freeCommerce.dll.config
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\freeCommerce.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\freeCommerce.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\csc.exe
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\csc.exe.config
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\csc.rsp
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\csi.exe
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\csi.exe.config
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\csi.rsp
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.AppContext.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Console.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.IO.Compression.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Net.Http.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Net.Sockets.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.ValueTuple.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Xml.XPath.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\vbc.exe
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\vbc.exe.config
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\vbc.rsp
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\VBCSCompiler.exe
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\Antlr3.Runtime.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\Business.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\Newtonsoft.Json.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.Helpers.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.Mvc.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.Optimization.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.Razor.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.WebPages.Deployment.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.WebPages.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.WebPages.Razor.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\WebGrease.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\Database.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\Business.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.Helpers.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.Mvc.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.Optimization.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.Razor.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.WebPages.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.WebPages.Deployment.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\System.Web.WebPages.Razor.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\Newtonsoft.Json.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\Antlr3.Runtime.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\Database.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\obj\Release\freeCommerce.csproj.AssemblyReference.cache
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\obj\Release\freeCommerce.csproj.CoreCompileInputs.cache
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\obj\Release\freeCommerce.csproj.CopyComplete
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\obj\Release\freeCommerce.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\obj\Release\freeCommerce.pdb
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\freeCommerce.dll.config
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\freeCommerce.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\freeCommerce.pdb
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\csc.exe
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\csc.exe.config
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\csc.rsp
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\csi.exe
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\csi.exe.config
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\csi.rsp
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\Microsoft.Managed.Core.targets
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.AppContext.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Collections.Immutable.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Console.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Globalization.Calendars.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.IO.Compression.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.IO.FileSystem.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Net.Http.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Net.Sockets.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Reflection.Metadata.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.ValueTuple.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Xml.XmlDocument.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Xml.XPath.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\vbc.exe
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\vbc.exe.config
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\vbc.rsp
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\VBCSCompiler.exe
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\VBCSCompiler.exe.config
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\Antlr3.Runtime.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\Business.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\Microsoft.Web.Infrastructure.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\Newtonsoft.Json.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.Helpers.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.Mvc.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.Optimization.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.Razor.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.WebPages.Deployment.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.WebPages.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.WebPages.Razor.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\WebGrease.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\Database.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\Business.pdb
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.Helpers.xml
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.Mvc.xml
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.Optimization.xml
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.Razor.xml
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.WebPages.xml
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.WebPages.Deployment.xml
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\System.Web.WebPages.Razor.xml
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\Newtonsoft.Json.xml
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\Antlr3.Runtime.pdb
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\Database.pdb
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\pt-br\System.Web.Helpers.resources.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\pt-br\System.Web.Mvc.resources.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\pt-br\System.Web.Optimization.resources.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\pt-br\System.Web.Razor.resources.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\pt-br\System.Web.WebPages.resources.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\obj\Release\freeCommerce.csproj.AssemblyReference.cache
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\obj\Release\freeCommerce.csproj.CoreCompileInputs.cache
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\obj\Release\freeCommerce.csproj.CopyComplete
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\obj\Release\freeCommerce.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\obj\Release\freeCommerce.pdb

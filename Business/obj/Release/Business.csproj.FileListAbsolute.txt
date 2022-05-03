@@ -1,0 +1,18 @@
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Business\bin\Release\Business.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Business\bin\Release\Business.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Business\bin\Release\Database.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Business\bin\Release\Database.pdb
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Business\obj\Release\Business.csproj.AssemblyReference.cache
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Business\obj\Release\Business.csproj.CoreCompileInputs.cache
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Business\obj\Release\Business.csproj.CopyComplete
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Business\obj\Release\Business.dll
+C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce\Business\obj\Release\Business.pdb
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Business\bin\Release\Business.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Business\bin\Release\Business.pdb
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Business\bin\Release\Database.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Business\bin\Release\Database.pdb
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Business\obj\Release\Business.csproj.AssemblyReference.cache
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Business\obj\Release\Business.csproj.CoreCompileInputs.cache
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Business\obj\Release\Business.csproj.CopyComplete
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Business\obj\Release\Business.dll
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\Business\obj\Release\Business.pdb

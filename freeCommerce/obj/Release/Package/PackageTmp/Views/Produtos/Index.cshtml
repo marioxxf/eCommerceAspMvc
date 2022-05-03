@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "Produtos";
+    List<Business.Item> produtos = ViewBag.Produtos;
+    List<Business.Item> qtdTotal = ViewBag.QtdTotalEmEstoque;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int iterador = 0;
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<style>
+    #thegrid {
+        width: 100%;
+    }
+
+        #thegrid div {
+            width: 33%;
+            display: inline-table;
+        }
+
+    #linkDetalhe {
+        color: #9d9d9d;
+        text-decoration: underline;
+    }
+</style>
+
+@if (TempData["sucesso"] != null)
+{
+    <br /><div id="divTemporaria" name="divTemporaria" class="alert alert-success">@TempData["sucesso"]</div>
+}
+
+@if (TempData["erro"] != null)
+{
+    <div id="divTemporariaDois" name="divTemporariaDois" class="alert alert-danger">@TempData["erro"]</div>
+}
+
+<div class="jumbotron">
+    <div>
+        <a href="/produtos/cadastro" class="btn btn-secondary pull-right" style="background: white; color: #A54ED6; border: white; ">Cadastrar novo produto</a><br /><br />
+    </div>
+
+    
+
+    <div class="pull-right">
+        Quantidade de produtos em estoque:
+        @foreach (var q in qtdTotal)
+        {
+            @q.qtdEstoque
+        }
+    </div>
+
+    <h2 style="color: white; ">Produtos</h2>
+    <div id="thegrid">
+        @foreach (var p in produtos)
+        {
+            /*string exibicaoDaImagem = "<a target='" + "_blank' href='../UploadedFiles/" + p.imgFile + "'><img src='" + "../UploadedFiles/" + p.imgFile + "' width=" + 75.ToString() + "px" + " height=" + 150.ToString() + "px" + "></img></a>";*/
+            string exibicaoDaImagem = "<a target='" + "_blank' href='../UploadedFiles/" + p.imgFile + "'><img src='" + "../UploadedFiles/" + p.imgFile + "' width='100%'></img></a>";
+            exibicaoDaImagem = exibicaoDaImagem.Replace("\\", "/");
+
+            string srcImagem = "../UploadedFiles/" + p.imgFile;
+
+        <div>
+            @{
+                string valorVenda = p.precoVenda.ToString();
+                valorVenda = valorVenda.Replace(",", ".");
+            }
+
+
+
+            <div style="display: none;" id="testeMario/@iterador" value="Mario Junior" name="testeMario/@iterador">@valorVenda</div><br />
+
+
+
+            <div class="card" style="width: 25rem;">
+                <img src="@srcImagem" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">@p.nome</h6>
+                    <p class="card-text" id="divCard/@iterador" name="divCard/@iterador"></p>
+                    <a href="produtos/detalhes/@p.id" class="btn btn-primary stretched-link" style="background-color: #A54ED6; border: #A54ED6; ">Acessar produto</a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+            iterador = iterador + 1;
+        }
+    </div>
+
+</div>
+
+<script>
+    // Escondendo a div divTemporaria
+    $().ready(function () {
+        setTimeout(function () {
+            $('#divTemporaria').hide();
+        }, 6000);
+    });
+
+    var iterador = @iterador;
+    for (let i = 0; i < iterador; i++) {
+        let valor = document.getElementById('testeMario/' + i).textContent;
+        console.log(valor);
+        let valorFormatado = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(valor)
+        console.log(valorFormatado);
+        document.getElementById('testeMario/' + i).textContent = valorFormatado;
+        document.getElementById('divCard/' + i).textContent = valorFormatado;
+    }
+</script>
