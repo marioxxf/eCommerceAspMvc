@@ -44,10 +44,44 @@ namespace freeCommerce
             );
 
             routes.MapRoute(
+                "autenticacao-cadastro",
+                "autenticacao/cadastro",
+                new { controller = "Autenticacao", action = "Cadastro" }
+            );
+
+            routes.MapRoute(
+                "autenticacao-criar",
+                "autenticacao/criar",
+                new { controller = "Autenticacao", action = "Criar" }
+            );
+
+            routes.MapRoute(
+                "autenticacao-conta",
+                "autenticacao/minhaconta",
+                new { controller = "Autenticacao", action = "Conta" }
+            );
+
+            routes.MapRoute(
+                "autenticacao-desconecta",
+                "autenticacao/desconecta",
+                new { controller = "Autenticacao", action = "Desconecta" }
+            );
+
+            routes.MapRoute(
+                "autenticacao-login",
+                "autenticacao/login",
+                new { controller = "Autenticacao", action = "Login" }
+            );
+
+            
+
+            routes.MapRoute(
                 "produtos-anexar-porId",
                 "produtos/{id}/anexar",
                 new { controller = "Produtos", action = "AnexarPorId", id = 0 }
             );
+
+            
 
             routes.MapRoute(
                 name: "Default",

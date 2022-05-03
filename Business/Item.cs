@@ -73,7 +73,7 @@ namespace Business
             }
             return lista;
         }
-
+        
         public void Save()
         {
             new Database.Item().Salvar(this.id, this.nome, this.precoCusto, this.precoVenda, this.qtdEstoque, this.categoria);
