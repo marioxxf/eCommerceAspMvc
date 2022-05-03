@@ -49,7 +49,6 @@
     <div><br /><a target="_blank" href="@imagemDoProduto"><img id="imagemDoProduto" data-zoom-image="@imagemDoProduto" src="@imagemDoProduto" width="50%" height="50%" /></a></div><br />
 </div>
 
-<div style="display: flex; justify-content: space-evenly;">
     @{
         string valorCusto = produto.precoCusto.ToString();
         valorCusto = valorCusto.Replace(",", ".");
@@ -58,11 +57,11 @@
         valorVenda = valorVenda.Replace(",", ".");
     }
 
-    <b>Preço de custo:</b> <div style="font-size: 13px;" id="precoCusto" name="precoCusto">@valorCusto</div> |
-    <b>Preço de venda:</b> <div style="font-size: 13px;" id="precoVenda" name="precoVenda">@valorVenda</div> |
-    <b>Categoria do produto:</b> <div style="font-size: 13px;">@produto.categoria</div> |
+    <b>Preço de custo:</b> <div style="font-size: 13px;" id="precoCusto" name="precoCusto">@valorCusto</div><br />
+    <b>Preço de venda:</b> <div style="font-size: 13px;" id="precoVenda" name="precoVenda">@valorVenda</div><br />
+    <b>Categoria do produto:</b> <div style="font-size: 13px;">@produto.categoria</div><br />
     <b>Quantidade em estoque:</b> <div style="font-size: 13px; @destaqueVermelho">@produto.qtdEstoque</div>
-</div>
+
 
 <!---
 <div id="infoProduto">
