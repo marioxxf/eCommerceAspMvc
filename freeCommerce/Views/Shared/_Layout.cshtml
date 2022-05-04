@@ -131,6 +131,16 @@
             </ul>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <div>
+                            <img src="" style="margin-top: -20px;" id="imagemTemperatura" name="imagemTemperatura" alt="" width="40" height="34" class="d-inline-block align-text-top">
+                            <label style="color: #545255; margin-top: 10px; " id="gioiaMario" name="goiaMario"></label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="~/UploadedFiles/src/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
@@ -205,4 +215,15 @@
                 }
             });
     }
+
+    jQuery(function ($) {
+        $(document).ready(function () {
+            var cidade = "Santana de Parnaiba";
+            $.get("http://api.weatherapi.com/v1/current.json?key=6ff526e40a4f47b4834125549220405&q=" + cidade + "&aqi=no", { code: cidade }, function (resultado) {
+                console.log(resultado);
+                document.getElementById("imagemTemperatura").src = resultado.current.condition.icon;
+                document.getElementById('gioiaMario').innerHTML = resultado.location.name + ", " + resultado.location.region + "<br />" + resultado.current.temp_c + "ºC"  ;
+            });
+        });
+    });
 </script>
