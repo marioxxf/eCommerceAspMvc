@@ -1,6 +1,8 @@
 ﻿@{
     string usuarioLogado = "";
     string idDaSessao = Session.SessionID;
+    string crieOuLogin = "Crie sua conta ou faça login";
+    string bemVindo = "Olá, ";
     if (Html.Action("UsuarioLogado", "Autenticacao") == null)
     {
         usuarioLogado = "";
@@ -10,7 +12,6 @@
         usuarioLogado = Html.Action("UsuarioLogado", "Autenticacao").ToString();
     }
 }
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -76,12 +77,43 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        @{
+                            if (usuarioLogado.Length < 1)
+                            {
+                                @crieOuLogin;
+                            }
+                            else
+                            {
+                                @bemVindo; <b>@usuarioLogado</b>
+                            }
+                        }
+                    </a>
+                    @{
+                        if (usuarioLogado.Length < 1)
+                        {
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/autenticacao/cadastro">Criar conta</a>
+                                <a class="dropdown-item" href="/autenticacao/login">Fazer login</a>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/autenticacao/minhaconta">Minha conta</a>
+                                <a class="dropdown-item" onclick="desconectaUsuario()" href="/">Desconectar</a>
+                            </div>
+                        }
+                    }
+                </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Produtos
@@ -105,11 +137,12 @@
                             @{
                                 if (usuarioLogado.Length < 1)
                                 {
-                                    <label>Crie sua conta ou faça login</label>
+
+                                    @crieOuLogin;
                                 }
                                 else
                                 {
-                                    <label>Olá, @usuarioLogado</label>
+                                    @bemVindo; <b>@usuarioLogado</b>
                                 }
                             }
                         </a>
@@ -129,21 +162,14 @@
                                 </div>
                             }
                         }
-
                     </li>
                 </ul>
             </div>
-            <!---<form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-color: #CF95F2; color: #CF95F2 ">Search</button>
-            </form>-->
         </div>
     </nav>
-
     <div class="container body-content">
         @RenderBody()
     </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
@@ -154,7 +180,6 @@
     $(document).ready(function () {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
-
             //>=, not <=
             if (scroll >= 60) {
                 //clearHeader, not clearheader - caps H
@@ -163,7 +188,6 @@
                 $(".navbar").removeClass("bg-light");
             }
         }); //missing );
-
         // document ready
     });
 

@@ -53,10 +53,12 @@
         </div>
     </div>
 </div>
+<div id="div3" style="width:90px;height:90px;display:none;background-color:blue;"></div>
 
 <script>
     function coletaIdSessao() {
         var teste = document.getElementById('idSessao').value = '@idDaSessao';
+        $("#div3").delay(5000).fadeIn();
         document.getElementById('botaoCadastro').click();
     }
 </script>
