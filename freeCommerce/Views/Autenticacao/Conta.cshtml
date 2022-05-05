@@ -18,7 +18,7 @@
 @{
     if (conta.usuario == null || conta.senha == null || conta.email == null)
     {
-        <meta http-equiv="refresh" content="5; URL='https://localhost:44339/autenticacao/login'" />
+        <meta http-equiv="refresh" content="5; URL='https://mariogioia.azurewebsites.net/autenticacao/login'" />
 
         <div class="alert alert-danger" style="margin-top: -50px" role="alert">
             <h4 class="alert-heading">Conta não encontrada!</h4>
@@ -26,7 +26,7 @@
             <hr>
             <p class="mb-0">Você será redirecionado para a tela de login em 5 segundos.</p>
         </div>
-        
+
         <style>
             .containerGioiano {
                 width: 100%;
@@ -36,41 +36,47 @@
                 justify-content: center;
                 align-items: center;
             }
-                .water{
-                    width:400px;
-                    height: 400px;
-                    background-color: skyblue;
-                    border-radius: 50%;
-                    position: relative;
-                    box-shadow: inset 0 0 30px 0 rgba(0,0,0,.5), 0 4px 10px 0 rgba(0,0,0,.5);
-                    overflow: hidden;
-                }
-                .water:before, .water:after{
-                    content:'';
+
+            .water {
+                width: 200px;
+                height: 200px;
+                background-color: skyblue;
+                border-radius: 50%;
+                position: relative;
+                box-shadow: inset 0 0 30px 0 rgba(0,0,0,.5), 0 4px 10px 0 rgba(0,0,0,.5);
+                overflow: hidden;
+            }
+
+                .water:before, .water:after {
+                    content: '';
                     position: absolute;
-                    width:400px;
-                    height: 400px;
-                    top:-150px;
+                    width: 200px;
+                    height: 200px;
+                    top: -150px;
                     background-color: #fff;
                 }
-                .water:before{
+
+                .water:before {
                     border-radius: 45%;
-                    background:rgba(255,255,255,.7);
-                    animation:wave 5s linear infinite;
+                    background: rgba(255,255,255,.7);
+                    animation: wave 5s linear infinite;
                 }
-                .water:after{
+
+                .water:after {
                     border-radius: 35%;
-                    background:rgba(255,255,255,.3);
-                    animation:wave 5s linear infinite;
+                    background: rgba(255,255,255,.3);
+                    animation: wave 5s linear infinite;
                 }
-                @@keyframes wave{
-                    0%{
-                        transform: rotate(0);
-                    }
-                    100%{
-                        transform: rotate(360deg);
-                    }
+
+            @@keyframes wave {
+                0% {
+                    transform: rotate(0);
                 }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
         </style>
 
         <div class="containerGioiano">

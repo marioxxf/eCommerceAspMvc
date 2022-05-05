@@ -177,7 +177,6 @@
                 </ul>
             </div>
         </div>
-        <div id="div3" style="width:90px;height:90px;display:none;background-color:blue;"></div>
     </nav>
     <div class="container body-content">
         @RenderBody()
@@ -204,7 +203,6 @@
     });
 
     function desconectaUsuario() {
-        $("#div3").delay(5000).fadeIn();
         $.ajax({
                 type: "POST",
                 url: '@Url.Action("Desconecta", "Autenticacao")',
@@ -221,7 +219,7 @@
 
     jQuery(function ($) {
         $(document).ready(function () {
-            var cidade = "Santana de Parnaiba";
+            var cidade = "Sao Paulo";
             $.get("http://api.weatherapi.com/v1/current.json?key=6ff526e40a4f47b4834125549220405&q=" + cidade + "&aqi=no", { code: cidade }, function (resultado) {
                 console.log(resultado);
                 document.getElementById("imagemTemperatura").src = resultado.current.condition.icon;
