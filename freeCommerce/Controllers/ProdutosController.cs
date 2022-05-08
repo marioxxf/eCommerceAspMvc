@@ -133,6 +133,8 @@ namespace freeCommerce.Controllers
 
         public ActionResult Detalhes(int id)
         {
+            var contaLogada = Conta.BuscaPorStatusLogin(Session.SessionID);
+            ViewBag.ContaLogada = contaLogada;
             var produto = Item.BuscaPorId(id);
             ViewBag.Produto = produto;
             return View();

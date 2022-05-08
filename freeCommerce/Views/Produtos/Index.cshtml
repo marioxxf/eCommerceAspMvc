@@ -4,6 +4,7 @@
     List<Business.Item> qtdTotal = ViewBag.QtdTotalEmEstoque;
     Layout = "~/Views/Shared/_Layout.cshtml";
     int iterador = 0;
+    string idDaSessao = Session.SessionID;
 }
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -82,8 +83,9 @@
             iterador = iterador + 1;
         }
     </div>
-
 </div>
+
+<h1>@idDaSessao</h1>
 
 <script>
     // Escondendo a div divTemporaria

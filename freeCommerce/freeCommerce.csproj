@@ -178,6 +178,7 @@
     <Content Include="Views\Autenticacao\Login.cshtml" />
     <Content Include="Views\Autenticacao\Cadastro.cshtml" />
     <Content Include="Views\Autenticacao\Conta.cshtml" />
+    <Content Include="Views\Autenticacao\Logado.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

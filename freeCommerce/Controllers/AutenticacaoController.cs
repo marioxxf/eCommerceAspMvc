@@ -39,8 +39,8 @@ namespace freeCommerce.Controllers
                 conta.senha = Request["senha"];
                 conta.idSessao = Request["idSessao"];
                 conta.Save();
-                Response.Redirect("/autenticacao/minhaconta");
-                TempData["contaCriada"] = "Conta criada com sucesso!";
+                Response.Redirect("/autenticacao/login");
+                TempData["contaCriada"] = "Conta criada com sucesso! Agora você já pode fazer seu login abaixo.";
             }
             catch (Exception erro)
             {
@@ -59,7 +59,7 @@ namespace freeCommerce.Controllers
                 conta.senha = Request["senha"];
                 conta.idSessao = Request["idSessao"];
                 conta.Login();
-                Response.Redirect("/autenticacao/minhaconta");
+                Response.Redirect("/autenticacao/logado");
                 TempData["contaLogada"] = "Conta logada com sucesso!";
             }
             catch (Exception erro)
@@ -71,6 +71,11 @@ namespace freeCommerce.Controllers
         {
             var conta = Business.Conta.BuscaPorStatusLogin(Session.SessionID);
             ViewBag.Conta = conta;
+            return View();
+        }
+
+        public ActionResult Logado()
+        {
             return View();
         }
 
@@ -90,6 +95,21 @@ namespace freeCommerce.Controllers
             conta.Desconecta(Session.SessionID);
             string message = "Sucesso!";
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult ConfirmaLogin()
+        {
+            List<Business.Conta> ultimoRegistro = new Conta().ListarUltimoRegistro();
+            int ultimoIdCadastrado = 0;
+            foreach(var ultimaConta in ultimoRegistro)
+            {
+                ultimoIdCadastrado = ultimaConta.id;
+            }
+            var conta = new Conta();
+            conta.ConfirmaLogin(Session.SessionID, ultimoIdCadastrado);
+            string message = "Mario Gioia vive muito!";
+            return new ContentResult { Content = "Mario Gioia vive sim!" };
         }
     }
 }

@@ -59,13 +59,40 @@ namespace Database
             return ConfigurationManager.AppSettings["sqlConn"];
         }
 
+        public void ConfirmaLogin(string idSession, int id)
+        {
+            using (SqlConnection connection = new SqlConnection(sqlConn()))
+            {
+                string queryString = "update usuarios set idSessao = '" + idSession + "' where id = " + id;
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public DataTable ListaUltimoRegistro()
+        {
+            using (SqlConnection connection = new SqlConnection(sqlConn()))
+            {
+                string queryString = "select * from usuarios order by id desc";
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Connection.Open();
+
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = command;
+
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                return table;
+            }
+        }
+
         public void Salvar(string usuario, string email, string senha, string idSessao)
         {
             var hash = new Hash(SHA512.Create());
             using (SqlConnection connection = new SqlConnection(sqlConn()))
             {
-                string queryString = "update usuarios set statusLogin = 0;" +
-                    "insert into usuarios (usuario, senha, statusLogin, idSessao, statusConta, nivelAcesso, email) values('" + usuario + "', '" + hash.CriptografarSenha(senha) + "', 1, '" + idSessao + "', 1, 1, '" + email + "')";
+                string queryString = "insert into usuarios (usuario, senha, statusLogin, statusConta, nivelAcesso, email) values('" + usuario + "', '" + hash.CriptografarSenha(senha) + "', 0, 1, 1, '" + email + "')";
                 SqlCommand command = new SqlCommand(queryString, connection);
                 command.Connection.Open();
                 command.ExecuteNonQuery();
@@ -81,9 +108,9 @@ namespace Database
             using (SqlConnection connection = new SqlConnection(sqlConn()))
             {
                 string queryString = "select * from usuarios where usuario = '" + usuario + "' and senha = '" + hashTxtSenha + "'";
-                Console.WriteLine(queryString);
                 SqlCommand command = new SqlCommand(queryString, connection);
                 command.Connection.Open();
+                command.ExecuteNonQuery();
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
                 adapter.SelectCommand = command;

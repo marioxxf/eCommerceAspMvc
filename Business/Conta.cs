@@ -48,6 +48,29 @@ namespace Business
             return conta;
         }
 
+        public void ConfirmaLogin(string idSession, int id)
+        {
+            new Database.Conta().ConfirmaLogin(idSession, id);
+        }
 
+        public List<Conta> ListarUltimoRegistro()
+        {
+            var lista = new List<Conta>();
+            var itensDoBanco = new Database.Conta();
+            foreach (DataRow row in itensDoBanco.ListaUltimoRegistro().Rows)
+            {
+                var conta = new Conta();
+                conta.id = Convert.ToInt32(row["id"]);
+                conta.usuario = row["usuario"].ToString();
+                conta.statusLogin = Convert.ToInt32(row["statusLogin"]);
+                conta.statusConta = Convert.ToInt32(row["statusConta"]);
+                conta.nivelAcesso = Convert.ToInt32(row["nivelAcesso"]);
+                conta.email = row["email"].ToString();
+                conta.senha = row["senha"].ToString();
+                conta.idSessao = row["idSessao"].ToString();
+                lista.Add(conta);
+            }
+            return lista;
+        }
     }
 }

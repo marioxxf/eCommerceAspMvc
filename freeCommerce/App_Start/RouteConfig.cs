@@ -62,6 +62,12 @@ namespace freeCommerce
             );
 
             routes.MapRoute(
+                "autenticacao-logado",
+                "autenticacao/logado",
+                new { controller = "Autenticacao", action = "Logado" }
+            );
+
+            routes.MapRoute(
                 "autenticacao-conta",
                 "autenticacao/minhaconta",
                 new { controller = "Autenticacao", action = "Conta" }

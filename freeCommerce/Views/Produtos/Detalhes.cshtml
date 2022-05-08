@@ -1,11 +1,15 @@
 ﻿@{
     ViewBag.Title = "Detalhes do Produto";
     Business.Item produto = ViewBag.Produto;
+    Business.Conta conta = ViewBag.ContaLogada;
     int iterador = 0;
     string disponibilidade = "";
     string imgDisponibilidade = "";
     string destaqueVermelho = "";
+    double valorVendaTotal = 0;
 }
+
+<h1>@conta.usuario</h1>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
@@ -45,7 +49,23 @@
 <hr />
 
 <label style="color:gray;">Passe o mouse sobre a imagem para uma maior análise ou clique nela</label>
-<div style="display: block;">
+<form>
+    <input type="text" name="produto" id="produto" value="@produto.nome" />
+    <input type="text" name="valorProduto" id="valorProduto" value="@produto.precoVenda" />
+    <div class="input-group mb-3" style="margin-left: 768px;">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Quantidade</span>
+        </div>
+        <input type="text" id="qtdProduto" name="qtdProduto" class="form-control" onblur="testeLesgo()" maxlength="3" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <input type="text" name="idCliente" id="idCliente" value="@conta.id" />
+    <input type="text" name="nomeCliente" id="nomeCliente" value="@conta.usuario" />
+    <input type="text" name="valorVendaTotal" id="valorVendaTotal" />
+    <input type="text" name="dataVenda" id="dataVenda" />
+
+    <button type="button" class="btn btn-success btn-lg btn-xs" style="margin-left: 1047px;">Comprar</button>
+</form>
+<div>
     <div><br /><a target="_blank" href="@imagemDoProduto"><img id="imagemDoProduto" data-zoom-image="@imagemDoProduto" src="@imagemDoProduto" width="50%" height="50%" /></a></div><br />
 </div>
 
@@ -60,7 +80,8 @@
     <b>Preço de custo:</b> <div style="font-size: 13px;" id="precoCusto" name="precoCusto">@valorCusto</div><br />
     <b>Preço de venda:</b> <div style="font-size: 13px;" id="precoVenda" name="precoVenda">@valorVenda</div><br />
     <b>Categoria do produto:</b> <div style="font-size: 13px;">@produto.categoria</div><br />
-    <b>Quantidade em estoque:</b> <div style="font-size: 13px; @destaqueVermelho">@produto.qtdEstoque</div>
+    <b>Quantidade em estoque:</b> <div style="font-size: 13px; @destaqueVermelho">@produto.qtdEstoque</div><br />
+    
 
 
 <!---
@@ -83,4 +104,25 @@
 
 <script>
     $("#imagemDoProduto").ezPlus();
+
+    function testeLesgo() {
+        var valorVendaTotal = document.getElementById('valorProduto').value;
+        var qtd = document.getElementById('qtdProduto').value;
+        var valorVendaTotal = valorVenda * qtd;
+        document.getElementById('valorVendaTotal').value = valorVendaTotal;
+    }
+</script>
+
+<script>
+    $().ready(function () {
+        var d = new Date();
+        var ano = d.getFullYear();
+        var mes = d.getMonth();
+        var dia = d.getDay();
+        mes = mes + 1;
+        dia = dia + 1;
+        var dataCompleta = ano + "-" + mes + "-" + dia;
+        document.getElementById('dataVenda').value = dataCompleta;
+        console.log(document.getElementById('dataVenda').value);
+    });
 </script>
