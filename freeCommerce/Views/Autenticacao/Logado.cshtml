@@ -1,4 +1,7 @@
-﻿<meta http-equiv="refresh" content="2; URL='https://localhost:44339/autenticacao/logado'" />
+﻿@{ 
+    string idDaSessao = Session.SessionID;
+}
+
 <meta http-equiv="refresh" content="2; URL='https://localhost:44339/produtos'" />
 
 <style>
@@ -47,12 +50,14 @@
 
 <center><span style="margin-top: 150px;" class="spinner spinner-large spinner-blue spinner-slow"></span></center>
 
+<h1>@idDaSessao</h1>
+
 <script>
     function desconectaxUsuario() {
         $.ajax({
                 type: "POST",
                 url: '@Url.Action("ConfirmaLogin", "Autenticacao")',
-                data: '',
+                data: @idDaSessao,
                 contentType: "application/json; charset=utf-8",
                 success: function () {
                     console.log("Mario Gioia vive!")

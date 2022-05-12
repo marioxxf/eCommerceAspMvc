@@ -178,7 +178,6 @@ C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce
 C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\obj\Release\freeCommerce.csproj.CopyComplete
 C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\obj\Release\freeCommerce.dll
 C:\Users\mario\OneDrive\Área de Trabalho\freeCommerce (Local Host)\freeCommerce\obj\Release\freeCommerce.pdb
-C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\freeCommerce.dll.config
 C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\freeCommerce.dll
 C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\freeCommerce.pdb
 C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\roslyn\csc.exe
@@ -268,3 +267,4 @@ C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\
 C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\obj\Release\freeCommerce.csproj.CopyComplete
 C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\obj\Release\freeCommerce.dll
 C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\obj\Release\freeCommerce.pdb
+C:\oneDrive\OneDrive - Fatec Centro Paula Souza\Documents\Projetos\freeCommerce\freeCommerce\bin\freeCommerce.dll.config

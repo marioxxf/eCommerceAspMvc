@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.SessionState;
 
 namespace freeCommerce.Controllers
 {
@@ -33,6 +34,10 @@ namespace freeCommerce.Controllers
         {
             try
             {
+                HttpCookie StudentCookies = new HttpCookie("StudentCookies");
+                StudentCookies.Value = "hallo";
+                StudentCookies.Expires = DateTime.Now.AddHours(1);
+                //StudentCookies.HttpOnly = true;
                 var conta = new Conta();
                 conta.usuario = Request["usuario"];
                 conta.email = Request["email"];

@@ -17,5 +17,11 @@ namespace freeCommerce
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        // Método estabiliza o SessionID, ou seja, tira o dinamismo dele
+        protected void Session_Start(Object sender, EventArgs e)
+        {
+            Session["init"] = 0;
+        }
     }
 }
